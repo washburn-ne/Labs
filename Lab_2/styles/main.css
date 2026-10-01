@@ -1,0 +1,72 @@
+:root 
+{ 
+    --primary-color: #991AAA; 
+}
+body{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 105%;
+        line-height: 1.12;
+        margin-left: 2em; 
+        margin-right: 2em;
+         
+        .important 
+        {
+                font-weight: bold;
+                color: rgb(250, 20, 20);
+        }
+        img 
+        { 
+            float: left; 
+            margin-right: 2em; 
+            margin-bottom: 1em;
+        }
+        header 
+        { 
+            padding-bottom: 1.5em;  
+            border-bottom: 7px solid rgb(5, 5, 5); 
+        }
+        h1
+        {
+            color: rgb(0, 80, 30);
+            font-size: 200%;
+        }
+        h2 
+        {
+            color: var(--primary-color);
+            font-size: 150%;
+            clear:both
+        }
+        a:link
+        {
+            color:blue;
+        }
+        a:visited
+        {
+            color: rgb(255, 176, 30);
+        }
+        a:focus
+        {
+            color: rgb(255, 176, 30);
+        }
+        a:hover
+        {
+            color: rgb(252, 99, 226);
+        }
+        li:first-child 
+        { 
+            font-weight: bold; 
+        }
+        li:last-child 
+        { 
+            font-style: italic; 
+        } 
+        #copyright 
+        { 
+            font-size: 80%; 
+        } 
+        footer p 
+        { 
+            text-align: right; 
+        }
+    }
+
