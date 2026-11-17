@@ -1,0 +1,153 @@
+* 
+{
+    box-sizing: border-box;
+}
+:root 
+{ 
+    --primary-color: #991AAA; 
+}
+body
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 105%;
+	line-height: 1.12;
+	margin-left: 2em; 
+	margin-right: 2em;
+}
+.navbar a 
+{
+	display: flex;
+	padding: .75em 1em;
+	color: white;
+	text-decoration: none;
+	justify-content: center;
+}
+.menu > li 
+{
+	 position: relative;
+} 
+.submenu 
+{ 
+	display: none; 
+	position: relative;
+	top: 100%; 
+	left: 0; 
+	z-index: 10; 
+	min-width: 11rem; 
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+	background-color: #243447; 
+	justify-content: center;
+} 
+.has-submenu:hover > .submenu, 
+.has-submenu:focus-within > .submenu { 
+display: block; 
+}
+.navbar a:hover, .navbar a:focus-visible
+{
+	text-decoration: underline;
+	background-color: #ebfa13;
+}
+.navbar a.current 
+{
+	background-color: #8bdff8;
+	font-weight: bold;
+}
+.important 
+{
+	font-weight: bold;
+	color: rgb(250, 20, 20);
+}
+.content-box 
+{
+    padding: 6em;
+	padding-top: 0em; 
+	margin-right: 2em; 
+	margin-bottom: 1em;
+	border: 2px solid var(--primary-color);
+	border-radius: 10px;
+	background-color: #2299BB;
+}
+.page-layout 
+{
+	display: flex;
+	padding-top: 1em;
+	flex-direction: row;
+}
+.main-content 
+{
+	flex-basis: 50%;
+	padding-right: 1em;
+}
+.sidebar 
+{
+	flex-basis: 30%;
+	padding: 1em;
+	margin-left: 20em;
+	margin-right: 5em;
+	margin-bottom: 29em;
+	border: 2px solid var(--primary-color);
+	border-radius: 10px;
+	background-color: #2299BB;
+	text-align: center;
+}
+img 
+{ 
+	float: left; 
+	margin-right: 2em; 
+	max-width: 100%;
+}
+header 
+{ 
+	padding-bottom: 1.5em;  
+	border-bottom: 7px solid rgb(5, 5, 5); 
+}
+h1
+{
+	color: rgb(0, 80, 30);
+	font-size: 200%;
+}
+h2 
+{
+	color: var(--primary-color);
+	font-size: 150%;
+	clear:both;
+}
+a:link
+{
+	color:blue;
+}
+a:visited
+{
+	color: rgb(255, 176, 30);
+}
+a:focus-visible
+{
+	color: rgb(255, 176, 30);
+}
+a:focus:not(focus-visible)
+{
+	color: rgb(13, 202, 60);
+}
+a:hover
+{
+	color: rgb(252, 99, 226);
+}
+li:first-child 
+{ 
+	font-weight: bold; 
+}
+li:last-child 
+{ 
+	font-style: italic; 
+} 
+#copyright 
+{ 
+	font-size: 80%; 
+} 
+footer p 
+{ 
+	text-align: right; 
+}
+
